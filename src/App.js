@@ -1,23 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { Router, Switch, Route } from "react-router-dom";
+import { createBrowserHistory } from "history";
+import Homepage from "./components/homepage/layout";
+import Register from "./components/register/signup";
+import Signin from "./components/signin/login";
+import Programme_page from "./components/programme/programme_page";
+import Programme_List from "./components/programme/programme_list";
+import NotFound from "./components/notfound/error";
 
 function App() {
+  const history = createBrowserHistory()
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router history = {history}>
+        <Switch>
+          <Route 
+            exact 
+            path = "/" 
+            component={Homepage}
+          />
+          <Route  
+            path = "/register" 
+            component={Register}
+          />
+          <Route  
+            path = "/login" 
+            component={Signin}
+          />
+          <Route  
+            path = "/programme" 
+            component={Programme_page}
+          />
+          <Route  
+            path = "/programme-list" 
+            component={Programme_List}
+          />
+          <Route  
+            component={NotFound}
+          />
+        </Switch>
+      </Router>
+      
     </div>
   );
 }
