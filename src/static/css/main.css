@@ -69,7 +69,8 @@ li{
 }
 
 .logoutcont{
-    padding : 1vh 17vh !important
+    padding : 2vh 25vh 2vh 2vh !important;
+    cursor: pointer;
 }
 .profile{
     display: flex;
