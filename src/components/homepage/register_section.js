@@ -12,6 +12,7 @@ export default function register_section() {
                 <img src={registerData.image} alt="title" className="img-fluid"/>
             </div>
             <div className="col-12 col-lg-8">
+                <br/>
                 <h2>{registerData.title}</h2>
                 <p>{registerData.description}</p>
                 <Button variant="contained" className="readmore">{registerData.readmore}</Button>

@@ -12,6 +12,7 @@ export default function aboutus_section() {
                 <img src={aboutData.image} alt="title" className="img-fluid"/>
             </div>
             <div className="col-12 col-lg-8">
+                <br/>
                 <h2>{aboutData.title}</h2>
                 <p>{aboutData.description}</p>
                 <Button variant="contained" className="readmore">{aboutData.readmore}</Button>

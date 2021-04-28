@@ -12,6 +12,8 @@ export default function programme_section() {
                 <h2>{programmeData.title}</h2>
                 <p>{programmeData.description}</p>
                 <Button variant="contained" className="readmore">{programmeData.readmore}</Button>
+                <br/>
+                <br/>
             </div>
              <div className="col-12 col-lg-4">
                 <img src={programmeData.image} alt="title" className="img-fluid"/>

@@ -33,7 +33,7 @@ li{
     color : rgb(161, 161, 161)
 }
 .app h2,h3,h4, h5 button{
-    color: #6c60d6
+    color: #9884fc
 }
 
 .nopadding{
@@ -65,7 +65,7 @@ li{
 }
 
 .sidebar .active{
-    background-color: #d6278d !important;
+    background-color: #9884fc !important;
 }
 
 .logoutcont{
@@ -83,9 +83,13 @@ li{
 .header a{
     color : #fff !important
 }
+.header a:hover{
+    text-decoration: none;
+}
+
 
 .sidebar button{
-    background-color: #6c60d6;
+    background-color: #9884fc;
     color: #ffffff;
     border-radius: 20px;
     background: 
@@ -94,11 +98,11 @@ li{
     linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%);
 }
 .sidebar .active{
-    background-color: #d6278d !important;
+    background-color: #9884fc !important;
 }
 
 .header button{
-    background-color: #6c60d6;
+    background-color: #9884fc;
     color: #ffffff;
     border-radius: 20px;
     background: 
@@ -106,8 +110,13 @@ li{
     linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
     linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%);
 }
+.header a span:hover{
+color : #9884fc !important;
+text-decoration: none !important;
+
+}
 .header .active{
-    background-color: #d6278d !important;
+    background-color: #9884fc !important;
 }
 /* banner section */
 .welcome{
@@ -131,28 +140,16 @@ li{
     padding: 0 20px;
 }
 .logo{
-    font-size: 6rem;
+    font-size: 7vw;
     font-family: 'Monoton', cursive;
     color : #ffffff
 }
-.homepage .category .card{
-    margin-bottom: 10px;
-}
+
 .banner h1{
     padding: 20px 0
 }
-.banner{
-    height: 80vh;
-}
-.banner img{
-    height:90vh;
-    object-fit: cover;
-    background-size: cover;
-    margin-bottom: 20px;
-    margin-top: -5%;
-    position: absolute;
 
-}
+
 .banner .introduction{
     position: absolute;
     text-align: center;
@@ -196,7 +193,25 @@ width: 100%
     .auth form{
         padding-left: 30vh;
     }
+    .banner img{
+        height:90vh;
+        object-fit: cover;
+        background-size: cover;
+        margin-bottom: 20px;
+        margin-top: -5%;
+        position: absolute;
     
+    }
+    .banner{
+        height: 80vh;
+    }
+    .programmeVideo .video{
+        margin-top: -13vh;
+    }
+    .pageFooter .brandLogo{
+        text-align: center;
+    
+    }
 }
 
 
@@ -233,7 +248,7 @@ width: 100%
     padding-bottom: 10vh;
 }
 .programmepage .whyus button{
-    background-color: #6c60d6;
+    background-color: #9884fc;
     color : #fff;
     margin-top: 2%;
     background:
@@ -249,11 +264,6 @@ width: 100%
     padding: 2% 0
 }
 
-@media only screen and (min-width : 778px){
-    .programmeVideo .video{
-        margin-top: -13vh;
-    }
-}
 
 .programmebanner h1{
     padding: 20px 0
@@ -300,13 +310,30 @@ width: 100%
     .auth form input{
         width: 90% !important;
     }
+    .banner{
+        height: 100vw;
+    }
+    .banner img{
+        height:100vw;
+        object-fit: cover;
+        background-size: cover;
+        padding-bottom: 10vw;
+        position: absolute;
+    
+    }
+    
 }
+
+
 @media only screen and (max-width : 569px){
     .auth img{
         display: none;
     }
     .auth input{
         padding: 0 10px;
+    }
+    .homepage .category .card{
+        margin-bottom: 10vw;
     }
 }
 
@@ -366,23 +393,27 @@ margin-left: 15px;
 }
 
 /* footer styles */
-
+.padding{
+    padding: 0 10vw;
+}
 .pageFooter{
     background-color: #010616;
+    cursor: pointer;
     border-top: 1px solid rgb(100, 100, 100);
 }
 .pageFooter ul{
     padding-left: 0;
 }
 .pageFooter .brandLogo{
-    text-align: center;
     color : #ffffff;
-
 }
 .pageFooter .brandLogo li .text{
     border:1px solid #ffffff;
     color: #ffffff;
     padding : 10px
+}
+.pageFooter ul li .text:hover{
+    color: #9884fc !important;
 }
 .pageFooter{
     color : rgb(145, 145, 145);
@@ -449,7 +480,7 @@ margin-left: 15px;
     color: #ffffff !important;
     border-radius: 30px;
     margin-top: 15px !important;
-    background-color: #6c60d6;
+    background-color: #9884fc;
     background:
     linear-gradient(280deg, #d6278d48, rgb(10, 38, 122) 70.71%),
     linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
