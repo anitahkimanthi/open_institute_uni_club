@@ -17,11 +17,24 @@ import {
 export const updateRedux = () => dispatch =>{
     
     const data = JSON.parse(localStorage.getItem("registerInfo"))
-
-    dispatch({
-        type : REGISTER,
-        payload : data,
-    })
+    if(data){
+        dispatch({
+            type : REGISTER,
+            payload : data,
+        })
+    } else{
+        const  userInputs = {
+            email : "",
+            password : "",
+            age : "",
+            loggedIn : null
+        }
+        dispatch({
+            type : REGISTER,
+            payload : userInputs,
+        })
+    }
+    
 }
 
 // register user if they reguest  to register
