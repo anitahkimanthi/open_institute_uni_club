@@ -69,19 +69,19 @@ export const data = {
         image : "image",
         subImages : [
             {
-                text : "Consectetur adipiscing ",
+                text : "ZAZIBAR SPICE TOUR ",
                 image : image17
             },
             {
-                text: "Lorem ipsum dolor sit amet",
+                text: "SLAVE TRADE TOUR",
                 image:image3
             },
             {
-                text: "Consectetur adipiscing ",
+                text: "MWALIMU NYERER TOUR",
                 image: image4
             },
             {
-                text : "Tempor incididunt",
+                text : "KIGALI REMEMBERANCE TOUR",
                 image: image8
             }
         ]

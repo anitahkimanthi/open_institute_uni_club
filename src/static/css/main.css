@@ -119,6 +119,16 @@ text-decoration: none !important;
     background-color: #9884fc !important;
 }
 /* banner section */
+
+.homepage .category .card{
+    margin: 10px;
+    color : #ffffff;
+    background: 
+    linear-gradient(280deg, rgba(214, 39, 141, 0.281), rgb(10, 38, 122) 70.71%),
+    linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
+    linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%);
+}
+
 .welcome{
     display: flex;
     color : #ffffff;
@@ -337,9 +347,7 @@ width: 100%
     }
 }
 
-.homepage .category .card{
-    margin: 10px;
-}
+
 .activities{
     color : #535353
 }
