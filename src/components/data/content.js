@@ -10,7 +10,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 // about, programme and registration
-import about from "../../static/images/image4.jpeg";
+import about from "../../static/images/bg3.jpg";
 import programme from "../../static/images/image12.jpg";
 import register from "../../static/images/image6.jpeg";
 
@@ -29,6 +29,7 @@ import image5 from "../../static/images/image4.jpg";
 import image6 from "../../static/images/image5.jpeg";
 import image7 from "../../static/images/image6.jpeg";
 import image8 from "../../static/images/image6.jpg";
+import image17 from "../../static/images/bg4.jpeg";
 
 // activity icon
 import StarIcon from '@material-ui/icons/Star';
@@ -69,19 +70,19 @@ export const data = {
         subImages : [
             {
                 text : "Consectetur adipiscing ",
-                image : programme
+                image : image17
             },
             {
                 text: "Lorem ipsum dolor sit amet",
-                image:programme
+                image:image3
             },
             {
                 text: "Consectetur adipiscing ",
-                image: programme
+                image: image4
             },
             {
                 text : "Tempor incididunt",
-                image: programme
+                image: image8
             }
         ]
     },

@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from "../../static/images/bg.jpg"
+import bg from "../../static/images/bg2.jpg"
 
 export default function programme_page() {
     return (

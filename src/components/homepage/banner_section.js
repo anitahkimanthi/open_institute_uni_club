@@ -1,5 +1,5 @@
 import React from 'react';
-import bg from "../../static/images/bg.jpg"
+import bg from "../../static/images/bg4.jpg"
 
 export default function banner_section() {
     return (
