@@ -12,3 +12,463 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
+a{
+    text-decoration: none;
+    color: inherit !important;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+/* homepage styles */
+.app{
+    background-color: #010616;
+}
+.contentLayout p{
+    color : rgb(161, 161, 161)
+}
+.app h2,h3,h4, h5 button{
+    color: #6c60d6
+}
+
+.nopadding{
+    padding: 0
+}
+.contentLayout h2{
+ font-size: 3rem;
+ font-weight: 700;
+}
+.contentLayout h1{
+    font-size: 3rem;
+    font-weight: 900;
+   }
+.content .row{
+    padding-top: 5%;
+}
+
+/* header styles */
+.MuiDrawer-paper{
+    width: 80% !important;
+}
+.header{
+    font-size: 12px;
+}
+.sidebar{
+    width: 80% !important;
+    color : hsl(0, 0%, 42%) !important;
+    font-size: 12px  !important;
+}
+
+.sidebar .active{
+    background-color: #d6278d !important;
+}
+
+.logoutcont{
+    padding : 1vh 20vh !important
+}
+.profile{
+    display: flex;
+    color : #ffffff
+}
+.auth_buttons .avatar{
+    margin-right: 10px;
+}
+
+.header a{
+    color : #fff !important
+}
+
+.sidebar button{
+    background-color: #6c60d6;
+    color: #ffffff;
+    border-radius: 20px;
+    background: 
+    linear-gradient(280deg, rgba(214, 39, 141, 0.281), rgb(10, 38, 122) 70.71%),
+    linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
+    linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%);
+}
+.sidebar .active{
+    background-color: #d6278d !important;
+}
+
+.header button{
+    background-color: #6c60d6;
+    color: #ffffff;
+    border-radius: 20px;
+    background: 
+    linear-gradient(280deg, rgba(214, 39, 141, 0.281), rgb(10, 38, 122) 70.71%),
+    linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
+    linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%);
+}
+.header .active{
+    background-color: #d6278d !important;
+}
+/* banner section */
+.homepage .category .card{
+    margin-bottom: 10px;
+}
+.banner h1{
+    padding: 20px 0
+}
+.banner{
+    height: 80vh;
+}
+.banner img{
+    height:90vh;
+    object-fit: cover;
+    background-size: cover;
+    margin-bottom: 20px;
+    margin-top: -5%;
+    position: absolute;
+
+}
+.banner .introduction{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 30vh;
+    color: #ffffff;
+    background-color: #000000ab;
+}
+
+
+.line{
+    height: 5px;
+    background: #fff;
+}
+
+/* about styles */
+.contentLayout .readmore{
+    background-color: #D95996 !important;
+    color: #ffffff;
+    border-radius: 30px;
+    background:
+    linear-gradient(280deg, rgba(214, 39, 141, 0.281), rgb(10, 38, 122) 70.71%),
+    linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
+    linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%)
+}
+.about {
+    padding: 3% 0;
+}
+img{
+width: 100%
+}
+.content hr{
+    background-color: rgb(63, 63, 63);
+}
+/* categories styles */
+@media only screen and (min-width : 778px){
+    .categories{
+        margin-top: -17vh;
+        padding: 3% 0;
+    }
+    .auth form{
+        padding-left: 30vh;
+    }
+    
+}
+
+
+/* programme  styles*/
+.MuiStepIcon-active{
+    color : #969696 !important
+}
+.MuiStepLabel-iconContainer{
+    background-color: inherit !important;
+}
+.MuiStepLabel-label{
+    color : inherit !important
+}
+
+.programmepage .programmecontent{
+    background-color: #ffffff !important;
+}
+.programmepage .whyus{
+    background-color: #f1f1f1;
+}
+.programmepage .programmecontent h3{
+    color: #636363;
+    font-weight: 900;
+}
+.programmepage .whyus h3{
+    color: #636363;
+    font-weight: 900;
+}
+.programmepage .whyus h3{
+    margin-top: 3%;
+}
+.programmepage .programmeDescr{
+    color : #f1f1f1;
+    padding-bottom: 10vh;
+}
+.programmepage .whyus button{
+    background-color: #6c60d6;
+    color : #fff;
+    margin-top: 2%;
+    background:
+    linear-gradient(280deg, #d6278d48, rgb(10, 38, 122) 70.71%),
+    linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
+    linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%); 
+}
+.programme{
+    padding: 3% 0;
+}
+
+.section{
+    padding: 2% 0
+}
+
+@media only screen and (min-width : 778px){
+    .programmeVideo .video{
+        margin-top: -13vh;
+    }
+}
+
+.programmebanner h1{
+    padding: 20px 0
+}
+.programmebanner{
+    height: 50vh;
+}
+.programmebanner img{
+    height:50vh;
+    margin-top: 0%;
+    position: absolute;
+
+}
+.programmebanner .introduction{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 20vh;
+    color: #ffffff;
+    background-color: #000000ab;
+
+}
+/* activities styles */
+
+@media only screen and (max-width : 778px){
+    .programmepage .activities {
+        text-align: center;
+    }
+    .programmepage .whyus {
+        text-align: center;
+    }
+    .programmepage .programmeDescr{
+        text-align: center;
+    }
+    .homepage {
+        text-align: center;
+    }
+    .pageFooter{
+        padding-left: 20px;
+    }
+    .auth form{
+        padding-left: 5vh;
+    }
+    .auth form input{
+        width: 90% !important;
+    }
+}
+@media only screen and (max-width : 569px){
+    .auth img{
+        display: none;
+    }
+    .auth input{
+        padding: 0 10px;
+    }
+}
+
+.activities{
+    color : #535353
+}
+.activities ul{
+    padding-left: 0;
+}
+.activities .icon{
+    background-color: #b3b3b3;
+}
+.activities .text{
+margin-left: 15px;
+}
+/* cohorts styles */
+.cohorts {
+    color : #969696;
+    background-color: #ffffff;
+}
+
+/* register styles */
+
+.contentLayout .registration{
+    padding: 5% 0;
+}
+/* testimonies */
+.testimony{
+    background-color: #ffffff;
+    padding: 30px;
+    color : rgb(97, 97, 97)
+}
+.testimony p{
+    color : #535353;
+}
+.testimony .description{
+    padding-top: 4%;
+}
+/* partners styles */
+.partners{
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+.partners h3{
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 5vh;
+}
+
+.partners img{
+    width: 50%
+}
+/* gallary styles */
+.gallary img{
+    height: 300px;
+}
+
+/* footer styles */
+
+.pageFooter{
+    background-color: #010616;
+    border-top: 1px solid rgb(100, 100, 100);
+}
+.pageFooter ul{
+    padding-left: 0;
+}
+.pageFooter .brandLogo{
+    text-align: center;
+    color : #ffffff;
+
+}
+.pageFooter .brandLogo li .text{
+    border:1px solid #ffffff;
+    color: #ffffff;
+    padding : 10px
+}
+.pageFooter{
+    color : rgb(145, 145, 145);
+    padding: 3% 0;
+}
+.pageFooter h5{
+    margin-bottom: 20px;
+    color : #ffffff
+}
+
+.pageFooter .social-media{
+    display: flex;
+    margin-right: 10px;
+
+}
+.pageFooter .social-media{
+    display: flex;
+    margin-right: 10px;
+
+}
+
+.pageFooter li{
+    margin-top: 7px;
+}
+.pageFooter .social-media li{
+    padding-right : 10px
+}
+
+.pageFooter .contact-info li{
+    display: flex;
+}
+.pageFooter .contact-info li span{
+    padding-right: 10px;
+}
+
+
+
+/* auth styles */
+.errorMessage{
+    color: red
+}
+
+.auth .disabled{
+    background-color: #d49bbd !important;
+    cursor: none !important; 
+    color : #fff;
+    margin-top: 15px !important;
+}
+.auth{
+    margin-top: 3vh;
+}
+.auth h3{
+    font-weight: 900;
+}
+
+.auth .footer a:hover{
+    color: #d6278d !important
+}
+.auth .footer{
+    color : #ffffff;
+    margin-top: 20px;
+}
+.auth .enabled{
+    color: #ffffff !important;
+    border-radius: 30px;
+    margin-top: 15px !important;
+    background-color: #6c60d6;
+    background:
+    linear-gradient(280deg, #d6278d48, rgb(10, 38, 122) 70.71%),
+    linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
+    linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%); 
+}
+.auth .image img{
+    height: 100vh;
+    height: 100%;
+}
+.auth .footer{
+    display: flex;
+}
+.auth .divider{
+    background-color: #535353;
+    margin: 0 10px
+}
+
+.auth .fields input{
+    padding: 5px 10px;
+    border: 1px solid #535353;
+    margin-top: 15px;
+    width : 70%
+}
+.auth form{
+    display: block;
+}
+
+
+
+/* alerts styles */
+.alert{
+    position: fixed !important; 
+    width: 100%;
+    z-index: 100000000000000;
+}
+.success{
+    background-color: green !important;
+}
+.error{
+    background-color: red !important;
+    color: #ffffff !important
+}
+.MuiAlert-icon{
+    color: #ffffff !important
+}
+.app .icon{
+    color: #ffffff !important
+}

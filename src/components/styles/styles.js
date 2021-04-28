@@ -5,13 +5,21 @@ const drawerWidth = 300
 
 export const headerStyles = makeStyles(
     (theme) => ({
-
-        brand : {
-            flexGrow: 1,
+        auth: {
+            [theme.breakpoints.down("sm")]:{
+                display : "none"
+            },
         },
-        
+        appBar: {
+            boxShadow : "none",
+            backgroundColor : "#010616"
+        },
         avator : {
-            marginRight: theme.spacing(1)
+            marginRight: theme.spacing(1),
+            border:" 1px solid #ffffff",
+            color: "#ffffff",
+            padding : "10px",
+
         },
         menuButton: {
             [theme.breakpoints.up("sm")] : {
@@ -19,21 +27,33 @@ export const headerStyles = makeStyles(
             },
             marginRight : theme.spacing(2),
         },
-        text : {
-            
+        headerLinks: {
+            [theme.breakpoints.up("sm")] : {
+                display : "flex",
+                flexGrow : 1
+             },
         },
-
-        drawer: {
-            width: drawerWidth
+        links:{
+            [theme.breakpoints.up("sm")] : {
+                display : "flex",
+                flexGrow : 1
+             },
+            [theme.breakpoints.down("sm")]:{
+                display : "none"
+            },
         },
-        paper: {
-            width: "100% !important",
+        linkItem : {
+            width : "auto"
         },
-          
+        buttonItem: {
+            [theme.breakpoints.up("sm")] : {
+                display : "flex",
+             },
+        },
         toolbar : theme.mixins.toolbar,
 
         toolbar : {
-            backgroundColor: "#ffffff",
+            backgroundColor: "transparent",
             color: "#3f3f3f"
         },
 
@@ -41,12 +61,6 @@ export const headerStyles = makeStyles(
             float: "right",
             marginTop: "10px",
             marginRight: "20px"
-        },
-        navitems : {
-            display: "inherit",
-            [theme.breakpoints.down("sm")]:{
-                display : "none"
-            },
         }
     })
 )

@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import {data} from "../data/content";
 
 export default function partners_section() {
+    const partners = data.partners
     return (
-        <div>
-            
+        <div className="row no-gutters justify-content-center partners">
+            <h3 className="col-12 text-center">{partners.title}</h3>
+            {partners.images.map((image, i) => 
+                <div className="col-12 col-md-2">
+                    <img src={image} alt="image" className="img-fluid"/>
+                </div>
+            )}
         </div>
     )
 }
