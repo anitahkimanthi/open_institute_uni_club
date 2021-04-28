@@ -7,7 +7,7 @@ export default function categories() {
     return (
         <div className="row category no-gutters">
             <div className="col-12">
-                <div className="row ">
+                <div className="row no-gutters">
                     {categoryData.map((c, i) => 
                     <div className="col-12 col-lg-3">
                         <div className="card">

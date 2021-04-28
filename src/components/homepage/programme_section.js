@@ -7,7 +7,7 @@ import {
 export default function programme_section() {
     const programmeData = data.programme
     return (
-        <div className="row programme">
+        <div className="row programme no-gutters">
             <div className="col-12 col-lg-8" >
                 <h2>{programmeData.title}</h2>
                 <p>{programmeData.description}</p>
