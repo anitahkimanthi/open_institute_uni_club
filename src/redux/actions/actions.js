@@ -113,7 +113,6 @@ export const googleAuthLogin = () => dispatch =>{
 export const resetPassword = (userInputs) => dispatch =>{
 
     const signupData = JSON.parse(localStorage.getItem("registerInfo"))
-    console.log(signupData !== undefined)
     // check if the account already exist
     if(signupData !== undefined){
 

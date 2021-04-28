@@ -9,7 +9,7 @@ export default function aboutus_section() {
     return (
         <div className="row  about">
             <div className="col-12 col-lg-4">
-                <img src={aboutData.image} alt="image" className="img-fluid"/>
+                <img src={aboutData.image} alt="title" className="img-fluid"/>
             </div>
             <div className="col-12 col-lg-8">
                 <h2>{aboutData.title}</h2>

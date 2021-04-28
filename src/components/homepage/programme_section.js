@@ -14,7 +14,7 @@ export default function programme_section() {
                 <Button variant="contained" className="readmore">{programmeData.readmore}</Button>
             </div>
              <div className="col-12 col-lg-4">
-                <img src={programmeData.image} alt="image" className="img-fluid"/>
+                <img src={programmeData.image} alt="title" className="img-fluid"/>
             </div>
         </div>
     )

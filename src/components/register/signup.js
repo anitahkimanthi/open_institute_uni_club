@@ -83,8 +83,8 @@ function Signup(props) {
                 </div>
                 </form>
             </div>
-            <div className="col-12 col-lg-6 image">
-                <img src={image} alt="image" className="img-fluid"/>
+            <div className="col-12 col-lg-6 image_wapper">
+                <img src={image} alt="title" className="img-fluid"/>
             </div>
         </div>
     )

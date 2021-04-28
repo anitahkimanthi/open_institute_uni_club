@@ -17,21 +17,18 @@ import {
     Button
 } from "@material-ui/core";
 
-import CloseIcon from "@material-ui/icons/Close";
 import MenuIcon from "@material-ui/icons/Menu"
-import { useState , useEffect} from "react";
+import { useState } from "react";
 import { headerStyles } from "../styles/styles";
 import {data} from "../data/content";
 import {logoutUser} from "../../redux/actions/actions";
 import {connect} from "react-redux"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import {
     usePopupState,
     bindTrigger,
     bindPopover,
   } from 'material-ui-popup-state/hooks'
-import { NaturePeopleOutlined } from '@material-ui/icons';
 
 const headerContent = data.header
 const buttons = data.auth

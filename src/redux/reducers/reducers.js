@@ -34,47 +34,47 @@ const allReducers = (state = initialState, action) => {
             }
         case SUCCESS_LOGIN:
             return {
-                ... state,
+                ...state,
                 message : action.payload
             }
         case FAILED_LOGIN:
             return {
-                ... state,
+                ...state,
                 error : action.payload
             }
         case SUCCESS_PASSWORD_RESET:
             return {
-                ... state,
+                ...state,
                 message : action.payload
             }
         case FAILED_PASSWORD_RESET:
             return {
-                ... state,
+                ...state,
                 error : action.payload
             }
         case SUCCESS_LOGOUT:
             return {
-                ... state,
+                ...state,
                 message : action.payload
             }
         case FAILED_LOGOUT:
             return {
-                ... state,
+                ...state,
                 error : action.payload
             }
         case GOOGLEAUTH_LOGIN_SUCCESS:
             return {
-                ... state,
+                ...state,
                 message : action.payload
             }
         case GOOGLEAUTH_REGISTER:
             return {
-                ... state,
+                ...state,
                 googleAuthData : action.payload
             }
         case GOOGLEAUTH_LOGIN_FAILED:
             return {
-                ... state,
+                ...state,
                 error : action.payload
             }
         default:

@@ -10,7 +10,7 @@ export default function gallary() {
                 <div className="row no-gutters ">
                     {gallary.map((image, i) => 
                     <div className="col-12 col-sm-6 col-md-3" key={i}>
-                       <img src={image} alt="image" className="img-fluid"/>
+                       <img src={image} alt="title" className="img-fluid"/>
                     </div>
                     )}
                 </div>

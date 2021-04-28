@@ -9,7 +9,7 @@ export default function register_section() {
     return (
         <div className="row registration">
             <div className="col-12 col-lg-4">
-                <img src={registerData.image} alt="image" className="img-fluid"/>
+                <img src={registerData.image} alt="title" className="img-fluid"/>
             </div>
             <div className="col-12 col-lg-8">
                 <h2>{registerData.title}</h2>

@@ -8,7 +8,7 @@ export default function testimonies_section() {
             <div className="col-12 col-lg-10">
                 <div className="row">
                     <div className="col-12 col-lg-4">
-                        <img src={testimony.image} alt="image" className="img-fluid"/>
+                        <img src={testimony.image} alt="title" className="img-fluid"/>
                     </div>
                     < div className="col-12 col-lg-8 description">
                         <h1>"</h1>

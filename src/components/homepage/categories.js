@@ -9,7 +9,7 @@ export default function categories() {
             {categoryData.map((c, i) => 
              <div className="col-12 col-lg-3">
                 <div className="card">
-                    <img src={c.image} alt="image" className="img-fluid" key={i}/>
+                    <img src={c.image} alt="title" className="img-fluid" key={i}/>
                     <div className="card-body">
                         <h5>
                             {c.text}

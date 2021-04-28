@@ -1,7 +1,7 @@
 import React from 'react';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
-import {StepLabel, Typography} from '@material-ui/core';
+import {StepLabel} from '@material-ui/core';
 import { data } from "../data/content";
 
 export default function VerticalLinearStepper() {

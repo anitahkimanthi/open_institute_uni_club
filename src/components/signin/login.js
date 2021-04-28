@@ -21,7 +21,7 @@ function Login(props) {
     const handleSubmit = (e) =>{
         e.preventDefault();
 
-        const {password, emai} = state
+        const {password, email} = state
 
         const  userInputs ={
             email : email,
@@ -68,12 +68,11 @@ function Login(props) {
                     <Link to="/register">
                         <small>Register</small>
                     </Link>
-                    
                 </div>
                 </form>
             </div>
-            <div className="col-12 col-lg-6 image">
-                <img src={image} alt="image" className="img-fluid"/>
+            <div className="col-12 col-lg-6 image_wapper">
+                <img src={image} alt="title" className="img-fluid"/>
             </div>
         </div>
     )

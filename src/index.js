@@ -6,7 +6,6 @@ import App from './App';
 import './static/css/main.css'
 import store from "./redux/store";
 import "bootstrap/dist/css/bootstrap.min.css";
-import $ from 'jquery'; 
 
 ReactDom.render(
   <Provider store={store}>

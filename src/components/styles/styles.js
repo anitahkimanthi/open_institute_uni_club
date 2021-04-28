@@ -1,7 +1,4 @@
 import { makeStyles } from "@material-ui/core";
-import LinearProgress from '@material-ui/core/LinearProgress';
-
-const drawerWidth = 300
 
 export const headerStyles = makeStyles(
     (theme) => ({

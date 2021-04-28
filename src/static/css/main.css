@@ -429,7 +429,7 @@ margin-left: 15px;
     linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
     linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%); 
 }
-.auth .image img{
+.auth .image_wapper img{
     height: 100vh;
     height: 100%;
 }
