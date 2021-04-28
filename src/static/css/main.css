@@ -110,6 +110,31 @@ li{
     background-color: #d6278d !important;
 }
 /* banner section */
+.welcome{
+    display: flex;
+    color : #ffffff;
+    justify-content: center;
+}
+.introcontent{
+    margin-top: 4%;
+}
+.welcome .hr {
+    height: 5px;
+    width: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px ;
+    background-color: #ffffff
+}
+
+.welcome .welc{
+    /* margin-top: 10px; */
+    padding: 0 20px;
+}
+.logo{
+    font-size: 6rem;
+    font-family: 'Monoton', cursive;
+    color : #ffffff
+}
 .homepage .category .card{
     margin-bottom: 10px;
 }
@@ -132,7 +157,7 @@ li{
     position: absolute;
     text-align: center;
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 20vh;
     color: #ffffff;
     background-color: #000000ab;
 }

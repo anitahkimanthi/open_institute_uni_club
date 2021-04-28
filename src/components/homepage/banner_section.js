@@ -7,9 +7,15 @@ export default function banner_section() {
             <img src={bg} alt="background" className="img-fluid "/>
             <div className="introduction col-10 col-lg-6">
                 
-                <h1>
-                    WELCOME TO OPCLUB
-                </h1>
+                <p className="introcontent">
+                    <div className="welcome">
+                        <span className="hr"><hr/></span>
+                        <span className="welc">WELCOME TO</span>
+                        <span className="hr"> <hr/></span>
+                    </div> 
+                    <span  className="logo">OPCLUB</span>
+                    <hr/>
+                </p>
             </div>
         </div>
     )
