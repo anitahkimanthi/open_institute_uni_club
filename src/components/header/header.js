@@ -69,10 +69,18 @@ const Sidebar = (props) =>{
             {loggedIn ? 
                     <div className="auth_buttons">
                         <div className="profile" {...bindTrigger(popupState)} >
-                            <Avatar
-                            src="/broken-image.jpg"
-                            className="avatar"
-                            /> {username}<ExpandMoreIcon/>
+                            <List>
+                                <ListItem>
+                                <Avatar
+                                    src="/broken-image.jpg"
+                                    className="avatar"
+                                /> 
+                                    <ListItemText>
+                                        {username}<ExpandMoreIcon/>
+                                    </ListItemText>
+                                        
+                                </ListItem>
+                            </List>
                         </div>
                         <Popover
                             {...bindPopover(popupState)}
@@ -181,10 +189,18 @@ const Nav = (props) =>{
                         {loggedIn ? 
                             <div className="auth_buttons">
                                 <div className="profile" {...bindTrigger(popupState)} >
+                                <List>
+                                    <ListItem>
                                     <Avatar
-                                    src="/broken-image.jpg"
-                                    className="avatar"
-                                    /> {username}<ExpandMoreIcon/>
+                                        src="/broken-image.jpg"
+                                        className="avatar"
+                                    /> 
+                                        <ListItemText>
+                                            {username}<ExpandMoreIcon/>
+                                        </ListItemText>
+                                            
+                                    </ListItem>
+                                </List>
                                 </div>
                                 <Popover
                                     {...bindPopover(popupState)}

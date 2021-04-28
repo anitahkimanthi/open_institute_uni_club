@@ -30,7 +30,9 @@ function Signup(props) {
             loggedIn : true
         }
 
+    
         props.register(userInputs)
+
     }
 
     const {password, email,age} = state
