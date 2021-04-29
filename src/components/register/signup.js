@@ -51,19 +51,19 @@ function Signup(props) {
                 />
                 <br/>
                 <input 
+                    type="number" 
+                    name ="age"
+                    value={age} 
+                    onChange={handleChange}
+                    placeholder="Age"
+                />
+                <br/>
+                <input 
                     type="password" 
                     name="password"
                     value={password} 
                     onChange={handleChange}
                     placeholder="password"
-                />
-                <br/>
-                <input 
-                    type="numbers" 
-                    name ="age"
-                    value={age} 
-                    onChange={handleChange}
-                    placeholder="Age"
                 />
                 <br/>
                 {password === "" || email === "" || age === "" ? 
