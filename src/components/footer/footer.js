@@ -7,7 +7,7 @@ export default function footer() {
     return (
         <div className="row no-gutters justify-content-center pageFooter">
             <div className="col-12 col-lg-10">
-                <div className="row padding">
+                <div className="row no-gutters padding">
                     {footerData.map((item, i) => 
                     <div className="col-12 col-sm-3 col-md-3" key={i}>
                         <h5><b>{item.title}</b></h5>
