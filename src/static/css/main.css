@@ -387,8 +387,9 @@ table tr td{
     }
     .auth form{
         padding-left: 5vh;
-        height: 50vh;
-        margin-top: 20%;
+        height: 70vh;
+        margin-top: 15%;
+        margin-bottom: 20%;
     }
     .auth form input{
         width: 90% !important;
