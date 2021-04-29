@@ -1,4 +1,4 @@
-# DOCUMENTATION
+# Open Institute University Club
 
 ## Project Description
 This is a club website created for University student.\
@@ -28,10 +28,6 @@ User can view programmes and the list and apply for the program
 
 ### Contact information
 The location and the contact of the company.
-
-## Regitration
-User is required to provide their personal information; Email address, Age and Password
-
 
 ## Installation
 Navigate to the directory you would want to store the project using terminal or command Prompt
