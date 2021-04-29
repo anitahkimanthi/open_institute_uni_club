@@ -6,7 +6,7 @@ import RegisterSection from "./register_section";
 import TestimonySection from "./testimonies_section";
 import PartnerSection from "./partners_section";
 import Categories from "./categories";
-import ReadMore from "./readmore_modals"
+import ReadMore from "../modals/readmore_modals"
 
 export default function Layout() {
 

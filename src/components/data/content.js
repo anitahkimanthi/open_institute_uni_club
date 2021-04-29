@@ -95,6 +95,8 @@ export const data = {
     about : {
         title : "About",
         image : about,
+        link : "/register",
+        linkText  : "Join",
         readmore : "Read more",
         moreInfo : [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -268,6 +270,8 @@ export const data = {
 
         title : "Programme",
         image : programme,
+        link : "/programme-list/Larry the Bird",
+        linkText  : "View Programs",
         readmore : "Read more",
         moreInfo : [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -291,6 +295,8 @@ export const data = {
     register : {
         title : "Registration",
         image : register,
+        link : "/register",
+        linkText  : "Join",
         readmore : "Read more",
         moreInfo : [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",

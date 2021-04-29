@@ -43,8 +43,8 @@ export default function FullScreenDialog(props) {
                                             {data.moreInfo.map((d, i) =>
                                                 <p key={i}>{d}</p>
                                             )}
-                                            <Link to="/register">
-                                                <Button variant="contained" className="join"  onClick={handleClose}>Join</Button>
+                                            <Link to={`${data.link}`}>
+                                                <Button variant="contained" className="join"  onClick={handleClose}>{data.linkText}</Button>
                                             </Link>
                                         </div>
                                     </div>
