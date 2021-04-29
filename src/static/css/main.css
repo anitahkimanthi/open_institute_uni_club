@@ -121,6 +121,7 @@ text-decoration: none !important;
 
 .homepage .category .card{
     margin: 10px;
+    height: 100%;
     color : #ffffff;
     background-color: #010120;
 }
