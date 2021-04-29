@@ -19,17 +19,20 @@ export const headerStyles = makeStyles(
 
         },
         menuButton: {
-            [theme.breakpoints.up("sm")] : {
+            [theme.breakpoints.up("md")] : {
                display : "none"
             },
             marginRight : theme.spacing(2),
+            color : "#fffff"
         },
+
         headerLinks: {
             [theme.breakpoints.up("sm")] : {
                 display : "flex",
                 flexGrow : 1
              },
         },
+
         links:{
             [theme.breakpoints.up("sm")] : {
                 display : "flex",
@@ -39,6 +42,7 @@ export const headerStyles = makeStyles(
                 display : "none"
             },
         },
+
         linkItem : {
             width : "auto"
         },
