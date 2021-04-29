@@ -598,7 +598,7 @@ margin-left: 15px;
 }
 
 .auth .footer a:hover{
-    color: #d6278d !important
+    color: #9884fc !important
 }
 .auth .footer{
     color : #ffffff;
@@ -645,7 +645,7 @@ margin-left: 15px;
     z-index: 100000000000000;
 }
 .success{
-    background-color: green !important;
+    background-color: rgb(141, 228, 141) !important;
 }
 .error{
     background-color: red !important;
