@@ -5,7 +5,9 @@ This is a dummy club website created for University students.
 
 The website provides users with information about the club and allows them to register so that they can access the club services.
 
-The project was created with [React](https://reactjs.org/), [Redux](https://redux.js.org/introduction/getting-started), [Material UI](https://material-ui.com/getting-started/), [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/) and CSS for styling. 
+The information provided and during registration, login and reset pasword is managed using redux and localstorage to make the site interactive.
+
+The project was created with [React](https://reactjs.org/), [Redux](https://redux.js.org/introduction/getting-started), [Material UI](https://material-ui.com/getting-started/), [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/).
 
 ## Project features and functionality
 
@@ -28,7 +30,7 @@ On the readmore button user can view more information
 User can view programmes and the list and apply for the program
 
 ### Contact information
-The location and the contact of the company.
+The location and the contacts of the company.
 
 ## Installation
 Navigate to the directory you would want to store the project using terminal or command Prompt
