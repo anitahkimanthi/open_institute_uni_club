@@ -501,6 +501,7 @@ margin-left: 15px;
 .dialog-content .join{
     background-color: #9884fc;
     color: #fff;
+    border-radius: 30px;
     padding: 5px 40px;
     background:
     linear-gradient(280deg, #d6278d48, rgb(10, 38, 122) 70.71%),
