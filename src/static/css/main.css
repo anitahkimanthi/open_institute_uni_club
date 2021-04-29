@@ -280,7 +280,6 @@ width: 100%
     padding: 2% 0
 }
 
-
 .programmebanner h1{
     padding: 20px 0
 }
@@ -454,6 +453,11 @@ margin-left: 15px;
 
 .partners img{
     width: 50%
+}
+/* not found page */
+.notfound{
+    background: #010120;
+    color : #ccc
 }
 /* gallary styles */
 .gallary img{
