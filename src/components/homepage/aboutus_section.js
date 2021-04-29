@@ -10,7 +10,7 @@ export default function aboutus_section(props) {
     const {handleClickOpen} = props
 
     return (
-        <div className="row  about">
+        <div className="row no-gutters about">
             <div className="col-12 col-md-4">
                 <img src={aboutData.image} alt="title" className="img-fluid"/>
             </div>
