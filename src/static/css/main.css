@@ -83,7 +83,6 @@ li{
 }
 .profile{
     display: flex;
-    color : #ffffff
 }
 .auth_buttons .avatar{
     margin-right: 10px;
@@ -213,6 +212,9 @@ width: 100%
     }
     .auth form{
         padding-left: 30vh;
+    }
+    .profile{
+        color : #ffffff
     }
     .banner img{
         height:80vh;
@@ -387,7 +389,7 @@ table tr td{
     }
     .auth form{
         padding-left: 5vh;
-        height: 70vh;
+        height: 50vh;
         margin-top: 15%;
         margin-bottom: 20%;
     }
