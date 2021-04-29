@@ -26,14 +26,17 @@ li{
 }
 
 /* homepage styles */
+.homepage img{
+    margin-bottom: 4%;
+}
 .app{
-    background-color: #010616;
+    background-color: #02020c;
 }
 .contentLayout p{
     color : rgb(161, 161, 161)
 }
 .app h2,h3,h4, h5 button{
-    color: #9884fc
+    color: #ffffff
 }
 
 .nopadding{
@@ -47,10 +50,6 @@ li{
     font-size: 3rem;
     font-weight: 900;
    }
-.content .row{
-    padding-top: 5%;
-}
-
 /* header styles */
 .MuiDrawer-paper{
     width: 80% !important;
@@ -123,10 +122,7 @@ text-decoration: none !important;
 .homepage .category .card{
     margin: 10px;
     color : #ffffff;
-    background: 
-    linear-gradient(280deg, rgba(214, 39, 141, 0.281), rgb(10, 38, 122) 70.71%),
-    linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
-    linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%);
+    background-color: #010120;
 }
 
 .welcome{
@@ -135,7 +131,8 @@ text-decoration: none !important;
     justify-content: center;
 }
 .introcontent{
-    margin-top: 4%;
+    margin-top: 3%;
+    margin-bottom: 0 !important;
 }
 .welcome .hr {
     height: 5px;
@@ -150,7 +147,7 @@ text-decoration: none !important;
     padding: 0 20px;
 }
 .logo{
-    font-size: 7vw;
+    font-size: 6vw;
     font-family: 'Monoton', cursive;
     color : #ffffff
 }
@@ -176,10 +173,11 @@ text-decoration: none !important;
 }
 
 /* about styles */
-.contentLayout .readmore{
+.readmore{
     background-color: #D95996 !important;
-    color: #ffffff;
+    color: #ffffff !important;
     border-radius: 30px;
+    border-radius: 20px !important;
     background:
     linear-gradient(280deg, rgba(214, 39, 141, 0.281), rgb(10, 38, 122) 70.71%),
     linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
@@ -204,7 +202,7 @@ width: 100%
         padding-left: 30vh;
     }
     .banner img{
-        height:90vh;
+        height:80vh;
         object-fit: cover;
         background-size: cover;
         margin-bottom: 20px;
@@ -213,7 +211,7 @@ width: 100%
     
     }
     .banner{
-        height: 80vh;
+        height: 70vh;
     }
     .programmeVideo .video{
         margin-top: -13vh;
@@ -236,31 +234,39 @@ width: 100%
     color : inherit !important
 }
 
-.programmepage .programmecontent{
-    background-color: #ffffff !important;
+.programmecontent .list{
+    background-color: #05052b !important;
+    color : #969696
+}
+.programmecontent .list circle{
+    color: #969696 !important;
 }
 .programmepage .whyus{
-    background-color: #f1f1f1;
+    background-color: #030313;
 }
 .programmepage .programmecontent h3{
     color: #636363;
     font-weight: 900;
 }
 .programmepage .whyus h3{
-    color: #636363;
+    color: #969696;
     font-weight: 900;
 }
 .programmepage .whyus h3{
     margin-top: 3%;
 }
+.programmepage .whyus p{
+    color: #969696
+}
 .programmepage .programmeDescr{
     color : #f1f1f1;
-    padding-bottom: 10vh;
+    padding-bottom: 2vh;
 }
 .programmepage .whyus button{
     background-color: #9884fc;
     color : #fff;
     margin-top: 2%;
+    border-radius: 20px !important;
     background:
     linear-gradient(280deg, #d6278d48, rgb(10, 38, 122) 70.71%),
     linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
@@ -295,6 +301,58 @@ width: 100%
     color: #ffffff;
     background-color: #000000ab;
 
+}
+
+/* program list styles */
+.programList hr{
+    background-color: #303030;
+    margin-top: 0;
+    
+}
+.programList .sidebarContent .activeprogram{
+    color: #fff !important;
+    padding: 7px;
+    background: #9884fc;
+    text-decoration: none;
+}
+.programList a{
+    text-decoration: none;
+}
+.programList a:hover{
+    text-decoration: none;
+    color: #9884fc !important
+}
+
+.programList{
+    color : #969696;
+    margin: 7% 0;
+}
+
+/* .programList .sidebar table tr td{
+    color : #969696
+} */
+table{
+    color: #969696;
+}
+table tr td{
+    padding: 10px 0;
+}
+.programList .heading{
+    padding: 0 2%;
+}
+.programList .heading h3{
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.programList .card{
+    background-color: #05052b;
+}
+
+
+.programList .sidebarContent{
+    background-color: #06061b;
+    padding-top: 20px;
 }
 /* activities styles */
 
@@ -349,7 +407,7 @@ width: 100%
 
 
 .activities{
-    color : #535353
+    color : #969696
 }
 .activities ul{
     padding-left: 0;
@@ -363,7 +421,7 @@ margin-left: 15px;
 /* cohorts styles */
 .cohorts {
     color : #969696;
-    background-color: #ffffff;
+    background-color: #030313;
 }
 
 /* register styles */
@@ -373,23 +431,22 @@ margin-left: 15px;
 }
 /* testimonies */
 .testimony{
-    background-color: #ffffff;
+    background-color: #030313;
     padding: 30px;
-    color : rgb(97, 97, 97)
+    color : #8b8b8b
 }
 .testimony p{
-    color : #535353;
+    color : #999999;
 }
-.testimony .description{
-    padding-top: 4%;
-}
+
 /* partners styles */
 .partners{
     padding: 20px 0;
-    background-color: #f1f1f1;
+    margin-bottom: 3%;
+    background-color: #02020c;
 }
 .partners h3{
-    color: #000000;
+    color: #ffffff;
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 5vh;
@@ -403,15 +460,41 @@ margin-left: 15px;
     height: 300px;
 }
 
+/* .modals and dialogs */
+.dialog-content{
+    color: #636363;
+    padding: 0 3%;
+}
+.dialog-content .join{
+    background-color: #9884fc;
+    color: #fff;
+    padding: 5px 40px;
+    background:
+    linear-gradient(280deg, #d6278d48, rgb(10, 38, 122) 70.71%),
+    linear-gradient(127deg, rgba(3, 4, 17, 0.8), rgba(142, 20, 146, 0.466) 70.71%),
+    linear-gradient(360deg, rgba(9, 9, 32, 0.8), rgba(0,0,255,0) 70.71%); 
+}
+.dialog{
+    background-color: #010616;
+    height: 100%;
+    overflow-y: auto;
+}
+.toolbar{
+    justify-content: flex-end;
+    color: #ffffff;
+}
+
+
 /* footer styles */
 .padding{
     padding: 0 10vw;
 }
 .pageFooter{
-    background-color: #010616;
+    background-color: #02020c;
     cursor: pointer;
-    border-top: 1px solid rgb(100, 100, 100);
+    border-top: 1px solid #0e0e25;
 }
+
 .pageFooter ul{
     padding-left: 0;
 }

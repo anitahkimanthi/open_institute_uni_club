@@ -3,7 +3,7 @@ import BannerSection from './programmebanner';
 import ProgrammeDescr from "./programmdescription.js";
 import ProgrammeCategories from "./programcategories";
 import ProgrammeActivities from "./programme_activities";
-import WhyChoosseUs from "./why_choose_us";
+import WhyChoosseUs from "./whyjoin";
 
 export default function layout() {
     return (

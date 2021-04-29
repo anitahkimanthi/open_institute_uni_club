@@ -3,6 +3,7 @@ import {data} from "../data/content";
 
 export default function partners_section() {
     const partners = data.partners
+    
     return (
         <div className="row no-gutters justify-content-center partners">
             <h3 className="col-12 text-center">{partners.title}</h3>

@@ -9,7 +9,7 @@ export default function footer() {
             <div className="col-12 col-lg-10">
                 <div className="row padding">
                     {footerData.map((item, i) => 
-                    <div className="col-12 col-sm-6 col-md-3" key={i}>
+                    <div className="col-12 col-sm-3 col-md-3" key={i}>
                         <h5><b>{item.title}</b></h5>
                         <ul className={item.class}>
                             {item.content.map((text, index) =>

@@ -145,7 +145,7 @@ const Nav = (props) =>{
 
     return(
         <div className="header row no-gutters">
-            <div className={classes.root}>
+            <div>
                 <AppBar className={classes.appBar}>
                     <Toolbar 
                         className={classes.toolbar}
@@ -160,15 +160,17 @@ const Nav = (props) =>{
                         </MenuIcon>
 
                         <div className={classes.logo}>
-                            <List>
-                                <ListItem >
-                                    <div 
-                                        className={classes.avator}
-                                    >
-                                            OPCLUB
-                                    </div>
-                                </ListItem>
-                            </List>
+                            <Link to="/">
+                                <List>
+                                    <ListItem >
+                                        <div 
+                                            className={classes.avator}
+                                        >
+                                                OPCLUB
+                                        </div>
+                                    </ListItem>
+                                </List>
+                            </Link>
                         </div>
                         <div className={classes.headerLinks}>
                             <List className={classes.links}>

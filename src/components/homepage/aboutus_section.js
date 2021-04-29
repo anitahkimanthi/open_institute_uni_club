@@ -4,18 +4,20 @@ import {
     Button
 } from "@material-ui/core";
 
-export default function aboutus_section() {
+export default function aboutus_section(props) {
+
     const aboutData = data.about
+    const {handleClickOpen} = props
+
     return (
         <div className="row  about">
-            <div className="col-12 col-lg-4">
+            <div className="col-12 col-md-4">
                 <img src={aboutData.image} alt="title" className="img-fluid"/>
             </div>
-            <div className="col-12 col-lg-8">
-                <br/>
+            <div className="col-12 col-md-8">
                 <h2>{aboutData.title}</h2>
                 <p>{aboutData.description}</p>
-                <Button variant="contained" className="readmore">{aboutData.readmore}</Button>
+                <Button variant="contained" className="readmore"  onClick={() =>handleClickOpen(aboutData)}>{aboutData.readmore}</Button>
             </div>
         </div>
     )

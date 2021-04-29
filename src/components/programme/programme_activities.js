@@ -10,9 +10,8 @@ export default function programmCategories() {
                 <div className="row no-gutters ">
                     <div className="col-12">
                         <h3>Programme Activities</h3>
+                        <br/>
                     </div>
-                    <br/>
-                    
                     {activities.map((item, i) => 
                     <div className="col-12 col-sm-6 col-md-6 col-lg-4" key={i}>
                         <ul className={item.class}>

@@ -9,7 +9,7 @@ export const headerStyles = makeStyles(
         },
         appBar: {
             boxShadow : "none",
-            backgroundColor : "#010616"
+            backgroundColor : "#02020c"
         },
         avator : {
             marginRight: theme.spacing(1),
@@ -51,7 +51,8 @@ export const headerStyles = makeStyles(
 
         toolbar : {
             backgroundColor: "transparent",
-            color: "#3f3f3f"
+            color: "#3f3f3f",
+            borderBottom: "4px solid #0e0e28"
         },
 
         close : {

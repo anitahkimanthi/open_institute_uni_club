@@ -1,20 +1,20 @@
 import React from 'react';
-import bg from "../../static/images/bg4.jpg"
+import { data } from "../data/content";
 
 export default function banner_section() {
+    const bannerData = data.banner
     return (
         <div className="row no-gutters justify-content-center banner">
-            <img src={bg} alt="background" className="img-fluid "/>
-            <div className="introduction col-10 col-lg-6">
+            <img src={bannerData.image} alt="background" className="img-fluid "/>
+            <div className="introduction col-10 col-lg-4">
                 
                 <p className="introcontent">
                     <div className="welcome">
                         <span className="hr"><hr/></span>
-                        <span className="welc">WELCOME TO</span>
+                        <span className="welc">{bannerData.welcome}</span>
                         <span className="hr"> <hr/></span>
                     </div> 
-                    <span  className="logo">OPCLUB</span>
-                    <hr/>
+                    <span  className="logo">{bannerData.logo}</span>
                 </p>
             </div>
         </div>

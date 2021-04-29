@@ -7,10 +7,10 @@ export default function testimonies_section() {
         <div className="row no-gutters  justify-content-center testimony">
             <div className="col-12 col-lg-10">
                 <div className="row">
-                    <div className="col-12 col-lg-4">
+                    <div className="col-12 col-md-6 col-lg-4">
                         <img src={testimony.image} alt="title" className="img-fluid"/>
                     </div>
-                    < div className="col-12 col-lg-8 description">
+                    < div className="col-12 col-md-6 col-lg-8 description">
                         <h1>"</h1>
                         <p>{testimony.description}</p>
                     </div>

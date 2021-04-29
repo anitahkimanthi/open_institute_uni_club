@@ -8,13 +8,14 @@ export default function VerticalLinearStepper() {
   const programmCategories = data.programme.categories
   return (
     <div className="row no-gutters justify-content-center section">
-      <Stepper orientation="vertical">
+      <Stepper orientation="vertical" className="list">
         {programmCategories.map((c, i) => (
           <Step key={i}>
             <StepLabel>{c}</StepLabel>
           </Step>
         ))}
       </Stepper>
+      
     </div>
   );
 }
