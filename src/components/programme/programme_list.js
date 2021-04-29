@@ -19,11 +19,11 @@ export default function Programme_list() {
 
             
             <div className="col-12 col-lg-10 programdata">
-                <div className="row justify-content-center">
+                <div className="row justify-content-center progcontent">
                     <div className="col-12 heading">
                         <h3>{programList.title}</h3>
                     </div>
-                    <hr className="col-12 col-lg-11"/>
+                    <hr/>
                     <div className="col-12 col-lg-4 col-xl-3 sidebarContent">
                     <table className=" table-borderless table-responsive-sm table-responsive-md">
                         <tbody>
