@@ -1,21 +1,22 @@
 # Open Institute University Club
 
 ## Project Description
-This is a club website created for University student.\
+This is a dummy club website created for University students.
+
 The website provides users with information about the club and allows them to register so that they can access the club services.
 
-The project was created with [Create React App](https://github.com/facebook/create-react-app), [redux](https://redux.js.org/introduction/getting-started), [Material UI](https://material-ui.com/getting-started/), [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/) and CSS for styling.
-It is a dummy club made for university students. 
+The project was created with [React](https://reactjs.org/), [Redux](https://redux.js.org/introduction/getting-started), [Material UI](https://material-ui.com/getting-started/), [Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/) and CSS for styling. 
 
-
-## Project feature
+## Project features and functionality
 
 ### Register
-User is required to provide their personal information; Email address, Age and Password
+Enter; `email address`, `age` and `password` and click register button .
 
 ### Login
-User is required to enter their email  and password (used during the registration).
+Enter their `email`  and `password` used during the registration.
+
 ### logout
+User can logout if they wish to. 
 
 ### Reset password
 If user forgot password they can click forgot password in the register or login pages and change their password
