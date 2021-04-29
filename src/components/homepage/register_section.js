@@ -9,7 +9,7 @@ export default function register_section(props) {
     const {handleClickOpen} = props
 
     return (
-        <div className="row registration">
+        <div className="row no-gutters registration">
             <div className="col-12 col-md-4">
                 <img src={registerData.image} alt="title" className="img-fluid"/>
             </div>

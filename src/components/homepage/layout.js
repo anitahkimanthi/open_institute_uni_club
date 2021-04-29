@@ -45,15 +45,16 @@ export default function Layout() {
                     handleClose={handleClose}
                 />
                 <hr/>
-                <RegisterSection
+                {/* <RegisterSection
                     open={open} 
                     handleClickOpen = {handleClickOpen} 
                     handleClose={handleClose}
-                />
+                /> */}
             </div>
             <div className="col-12 col-lg-12 nopadding">
                 <TestimonySection/>
             </div>
+
             <div className="col-12">
                 <PartnerSection/>
             </div>
