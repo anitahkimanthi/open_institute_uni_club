@@ -9,7 +9,7 @@ export default function whyjoin() {
     return (
         <div className="row no-gutters justify-content-center whyus section">
             <div className="col-12 col-lg-10">
-                <div className="row">
+                <div className="row no-gutters">
                     <div className="col-12 col-lg-2">
                     <h3>{joinData.title}</h3>
                     </div>

@@ -324,6 +324,10 @@ width: 100%
     width:100%;
     
 }
+.programmeVideo{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 .programList .sidebarContent .activeprogram{
     color: #fff !important;
     padding: 7px;

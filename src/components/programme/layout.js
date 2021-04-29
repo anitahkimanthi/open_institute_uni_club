@@ -14,6 +14,7 @@ export default function layout() {
             <div className="col-12 ol-lg-10 col-xl-8 programmeDescr">
                 <ProgrammeDescr/>
             </div>
+
             <div className="col-12 programmecontent">
                 <div className="row no-gutters justify-content-center">
                     <div className="col-12 col-lg-10 col-xl-8">
