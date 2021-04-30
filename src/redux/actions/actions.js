@@ -56,7 +56,7 @@ export const register = (userInputs) => dispatch =>{
     
     // reload the page to get rid of the modal
     setInterval(() => {
-        window.location.href=window.location.href
+        window.location.reload()
     }, 4000);
 }
 
@@ -95,7 +95,7 @@ export const signin = (userInputs) => dispatch =>{
         })
         }
         setInterval(() => {
-            window.location.href=window.location.href
+            window.location.reload()
         }, 4000);
     }
 }
@@ -153,7 +153,7 @@ export const resetPassword = (userInputs) => dispatch =>{
     }
     // reload the page to get rid of the modal
     setInterval(() => {
-        window.location.href=window.location.href
+        window.location.reload()
     }, 4000);
     
 }
@@ -194,6 +194,6 @@ export const logoutUser = () => dispatch =>{
 
     // reload the page to get rid of the modal
     setInterval(() => {
-        window.location.href=window.location.href
+        window.location.reload()
     }, 4000);
 }
