@@ -28,6 +28,10 @@ function Login(props) {
             password : password
         }
 
+        setState({
+            email : "",
+            password : "",
+        })
         props.signin(userInputs)
     }
     const {password, email} = state

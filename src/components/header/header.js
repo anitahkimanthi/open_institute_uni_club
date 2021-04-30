@@ -141,8 +141,6 @@ const Nav = (props) =>{
         logoutUser()
     }
 
-    const username = email.substring(0, email.lastIndexOf("@"));
-
     return(
         <div className="header row no-gutters">
             <div>
@@ -198,7 +196,7 @@ const Nav = (props) =>{
                                         className="avatar"
                                     /> 
                                         <ListItemText>
-                                            {username}<ExpandMoreIcon/>
+                                            {email ? email.substring(0, email.lastIndexOf("@")) : ""}<ExpandMoreIcon/>
                                         </ListItemText>
                                             
                                     </ListItem>

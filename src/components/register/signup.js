@@ -29,8 +29,14 @@ function Signup(props) {
             age : age,
             loggedIn : true
         }
+        
+        setState({
+            email : "",
+            password : "",
+            age : "",
+            loggedIn : false
+        })
 
-    
         props.register(userInputs)
 
     }

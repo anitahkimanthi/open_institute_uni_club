@@ -36,11 +36,12 @@ function ResetPassword(props) {
            const  userInputs ={
                 password : password
             } 
+            setState({
+                password : "",
+                confirm_password: ""
+            })
             props.resetPassword(userInputs)
         }
-        
-
-        
     }
 
     const {password, confirm_password, error} = state

@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Router, Switch, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import {updateRedux} from "./redux/actions/actions";
@@ -20,31 +20,20 @@ import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close'
 
 
-class App extends Component {
-  constructor(props){
-    super(props)
+function App(props){
+  const [open, setOpen] = useState(true)
 
-    this.state = {
-      open : true
-    }
-    }
+    useEffect(()=>{
+      props.updateRedux();
+    })
 
-    UNSAFE_componentWillMount(){
-      this.props.updateRedux();
-    }
-
-    closeAlert = () =>{
-      this.setState({
-        open : false
-      })
+    const closeAlert = () =>{
+      setOpen(false)
+      window.location.href=window.location.href
     }
   
-
-  render() {
     const history = createBrowserHistory();
-    const {message, error} = this.props
-    const {open} = this.state
-    const {closeAlert} = this
+    const {message, error} = props
 
     return (
     <div className="app row no-gutters">
@@ -137,7 +126,6 @@ class App extends Component {
       </div>
     </div>
   );
-}
 }
 const mapStateToProps = (state) => ({
   message : state.register.message,

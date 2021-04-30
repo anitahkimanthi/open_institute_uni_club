@@ -87,6 +87,9 @@ li{
 .auth_buttons .avatar{
     margin-right: 10px;
 }
+.auth_buttons{
+    cursor: pointer;
+}
 
 .header a{
     color : #fff !important
