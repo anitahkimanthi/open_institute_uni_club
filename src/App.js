@@ -25,6 +25,7 @@ function App(props){
 
     useEffect(()=>{
       props.updateRedux();
+
     })
 
     const closeAlert = () =>{
@@ -37,7 +38,7 @@ function App(props){
     return (
     <div className="app row no-gutters">
 
-    {open &&
+    {open  &&
      <div className="col-12" >
         {message !== "" && <Alert 
         severity="success" 
