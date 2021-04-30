@@ -53,6 +53,11 @@ export const register = (userInputs) => dispatch =>{
         type : SUCCESS_REGISTER,
         payload : "You have successifully created an account!",
     })
+    
+    // reload the page to get rid of the modal
+    setInterval(() => {
+        window.location.href=window.location.href
+    }, 4000);
 }
 
 // signin user if they already have an account
@@ -89,7 +94,9 @@ export const signin = (userInputs) => dispatch =>{
             payload : "Incorrect email or password"
         })
         }
-        
+        setInterval(() => {
+            window.location.href=window.location.href
+        }, 4000);
     }
 }
 
@@ -144,8 +151,10 @@ export const resetPassword = (userInputs) => dispatch =>{
             payload : "Account does not exist"
         })
     }
-
-    
+    // reload the page to get rid of the modal
+    setInterval(() => {
+        window.location.href=window.location.href
+    }, 4000);
     
 }
 
@@ -183,5 +192,8 @@ export const logoutUser = () => dispatch =>{
     })
     }
 
-   
+    // reload the page to get rid of the modal
+    setInterval(() => {
+        window.location.href=window.location.href
+    }, 4000);
 }

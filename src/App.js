@@ -29,7 +29,6 @@ function App(props){
 
     const closeAlert = () =>{
       setOpen(false)
-      window.location.href=window.location.href
     }
   
     const history = createBrowserHistory();
