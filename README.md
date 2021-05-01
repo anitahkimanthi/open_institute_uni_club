@@ -1,6 +1,7 @@
 # Open Institute University Club
 
 ## Project Description
+
 This is a dummy club website created for University students.
 
 The website provides users with information about the club and allows them to register so that they can access the club services.
@@ -12,35 +13,44 @@ The project was created with [React](https://reactjs.org/), [Redux](https://redu
 ## Project features and functionality
 
 ### Register
+
 Enter; `email address`, `age` and `password` and click register button .
 
 ### Login
-Enter their `email`  and `password` used during the registration.
+
+Enter their `email` and `password` used during the registration.
 
 ### logout
-User can logout if they wish to. 
+
+User can logout if they wish to.
 
 ### Reset password
+
 If user forgot password they can click forgot password in the register or login pages and change their password
 
 ### View more information on different sections
+
 On the readmore button user can view more information
 
 ### View programmes and apply for the program
+
 User can view programmes and the list and apply for the program
 
 ### Contact information
+
 The location and the contacts of the company.
 
 ## Installation
+
 Navigate to the directory you would want to store the project using terminal or command Prompt
- 
+
 To install the application, [go to](https://github.com/anitahkimanthi/open_institute_uni_club) and Click clone, copy the link provided.\
 
 In the project directory, type `git clone` and paste `the previously coppied link`;
 After the project has been installed, now run; `yarn install`
 
 ## Viewing project
+
 Run; `yarn start`
 
 This Runs the app in the development mode.\
@@ -50,6 +60,7 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## Building app for production
+
 Run; `yarn build`
 
 This builds the app for production to the `build` folder.\
