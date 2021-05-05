@@ -7,7 +7,7 @@ export default function banner_section () {
     <div className='row no-gutters justify-content-center banner'>
       <img src={bannerData.image} alt='background' className='img-fluid ' />
       <div className='introduction col-10 col-lg-4'>
-        <p className='introcontent'>
+        <div className='introcontent'>
           <div className='welcome'>
             <span className='hr'>
               <hr />
@@ -19,7 +19,7 @@ export default function banner_section () {
             </span>
           </div>
           <span className='logo'>{bannerData.logo}</span>
-        </p>
+        </div>
       </div>
     </div>
   )

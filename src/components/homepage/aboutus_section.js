@@ -3,8 +3,9 @@ import { data } from '../data/content'
 import { Button } from '@material-ui/core'
 
 export default function aboutus_section (props) {
-  const aboutData = data.about
-  const { handleClickOpen } = props
+
+  const aboutData = data.about 
+  const { handleClickOpen } = props // distructing props
 
   return (
     <div className='row no-gutters about'>

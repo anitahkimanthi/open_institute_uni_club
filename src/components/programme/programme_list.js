@@ -12,6 +12,7 @@ export default function Programme_list () {
     setActive(link)
   }
 
+  // filter the content with by the program list clicked
   const filteredContent = programList.programList.filter(
     p => p.title.toString() === active.toString()
   )

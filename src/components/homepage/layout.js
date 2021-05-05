@@ -9,14 +9,17 @@ import Categories from './categories'
 import ReadMore from '../modals/readmore_modals'
 
 export default function Layout () {
-  const [open, setOpen] = useState(false)
-  const [data, setData] = useState('')
 
+  const [open, setOpen] = useState(false) // set state
+  const [data, setData] = useState('') // set state
+
+  // when user clicks on menu show sidebar
   const handleClickOpen = d => {
     setOpen(true)
     setData(d)
   }
 
+  // when user clicks on outside close the menu
   const handleClose = () => {
     setOpen(false)
     setData('')

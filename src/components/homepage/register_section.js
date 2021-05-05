@@ -3,6 +3,7 @@ import { data } from '../data/content'
 import { Button } from '@material-ui/core'
 
 export default function register_section (props) {
+  
   const registerData = data.register
   const { handleClickOpen } = props
 

@@ -2,6 +2,8 @@ import React from 'react'
 import { data } from '../data/content'
 
 export default function footer () {
+  
+  // destructuring the imported data
   const footerData = data.footer
 
   return (

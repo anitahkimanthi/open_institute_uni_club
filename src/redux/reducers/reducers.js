@@ -9,7 +9,8 @@ import {
   FAILED_LOGOUT,
   GOOGLEAUTH_LOGIN_SUCCESS,
   GOOGLEAUTH_REGISTER,
-  GOOGLEAUTH_LOGIN_FAILED
+  GOOGLEAUTH_LOGIN_FAILED,
+  REGISTRATION_FAIL
 } from '../actions/types'
 
 const initialState = {
@@ -25,6 +26,11 @@ const allReducers = (state = initialState, action) => {
       return {
         ...state,
         registerInfo: action.payload
+      }
+    case REGISTRATION_FAIL:
+      return {
+        ...state,
+        error: action.payload
       }
     case SUCCESS_REGISTER:
       return {

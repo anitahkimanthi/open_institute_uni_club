@@ -1,6 +1,7 @@
 // Regitser type
 export const REGISTER = 'REGISTER'
 export const SUCCESS_REGISTER = 'SUCCESS_REGISTER'
+export const REGISTRATION_FAIL = 'REGISTRATION_FAIL'
 
 // signin
 export const SIGNIN = 'SIGNIN'

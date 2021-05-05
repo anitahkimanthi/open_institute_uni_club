@@ -2,6 +2,8 @@ import React from 'react'
 import { data } from '../data/content'
 
 export default function gallary () {
+  
+  // distructuring the imported data
   const gallary = data.gallary
 
   return (

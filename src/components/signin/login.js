@@ -2,8 +2,11 @@ import { Button, Divider } from '@material-ui/core'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { signin } from '../../redux/actions/actions'
+import { signin ,updateRedux} from '../../redux/actions/actions'
 import image from '../../static/images/image10.jpeg'
+import AlertBar from '../alert/alert'
+import {withRouter} from "react-router"
+import store from "../../redux/store"
 
 function Login (props) {
   const [state, setState] = useState({
@@ -11,12 +14,18 @@ function Login (props) {
     password: ''
   })
 
+
+  const { message, error,updateRedux } = props
+
+  // enabling user to type and see what they are typing
   const handleChange = e => {
     setState({
       ...state,
       [e.target.name]: e.target.value
     })
   }
+
+  // enabling user to submit the data entered in the fields
   const handleSubmit = e => {
     e.preventDefault()
 
@@ -26,17 +35,21 @@ function Login (props) {
       email: email,
       password: password
     }
-
     setState({
-      email: '',
-      password: ''
-    })
-    props.signin(userInputs)
+        email: '',
+        password: ''
+      })
+      props.signin(userInputs)
+      updateRedux()
+    
   }
-  const { password, email } = state
+      
+  const { password, email } = state // state distruction
 
   return (
     <div className='row no-gutters auth h-80 justify-content-center'>
+      <AlertBar message={message} error={error}/>
+
       <div className='col-12 col-lg-6 fields my-auto'>
         <form onSubmit={handleSubmit}>
           <h3>Sign In</h3>
@@ -91,7 +104,8 @@ function Login (props) {
 
 const mapStateToProps = state => ({
   registerInfo: state.register,
-  error: state.register.error
+  error: state.register.error,
+  message: state.register.message,
 })
 
-export default connect(mapStateToProps, { signin })(Login)
+export default withRouter(connect(mapStateToProps, { signin ,updateRedux})(Login))

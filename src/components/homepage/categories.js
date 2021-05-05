@@ -8,7 +8,7 @@ export default function categories () {
       <div className='col-12'>
         <div className='row no-gutters'>
           {categoryData.map((c, i) => (
-            <div className='col-12 col-md-6 col-lg-3'>
+            <div className='col-12 col-md-6 col-lg-3' key={i}>
               <div className='card'>
                 <img src={c.image} alt='title' className='img-fluid' key={i} />
                 <div className='card-body'>

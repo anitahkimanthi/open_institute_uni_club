@@ -1,11 +1,16 @@
 import { Button, Divider } from '@material-ui/core'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { register } from '../../redux/actions/actions'
+import { register, updateRedux } from '../../redux/actions/actions'
 import image from '../../static/images/image13.jpg'
+import AlertBar from '../alert/alert'
+import {withRouter} from "react-router"
+import store from '../../redux/store'
 
 function Signup (props) {
+
+  // setting user input in state
   const [state, setState] = useState({
     email: '',
     password: '',
@@ -13,12 +18,18 @@ function Signup (props) {
     loggedIn: false
   })
 
+
+  const { message, error ,updateRedux} = props
+
+  // enable user to type and see what they are typing
   const handleChange = e => {
     setState({
       ...state,
       [e.target.name]: e.target.value
     })
   }
+
+  // submit user data to the server but in our case we are using redux and local storage to store and retrive data
   const handleSubmit = e => {
     const { email, password, age } = state
 
@@ -37,12 +48,20 @@ function Signup (props) {
     })
 
     props.register(userInputs)
+    updateRedux();
+
+    const mess = store.getState().register.message
+    console.log(mess)
+    
   }
 
-  const { password, email, age } = state
-
+const { password, email, age } = state /// distructuring of state
   return (
+
     <div className='row no-gutters auth h-80 justify-content-center'>
+
+      <AlertBar message={message} error={error}/>
+      
       <div className='col-12 col-lg-6 fields my-auto'>
         <form>
           <h3>Register</h3>
@@ -103,6 +122,9 @@ function Signup (props) {
   )
 }
 
-const mapStateToProps = state => ({})
+const mapStateToProps = state => ({
+  message: state.register.message,
+  error: state.register.error
+})
 
-export default connect(mapStateToProps, { register })(Signup)
+export default withRouter(connect(mapStateToProps, { register,updateRedux })(Signup))

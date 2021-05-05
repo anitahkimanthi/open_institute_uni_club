@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { Router, Switch, Route } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import { updateRedux } from './redux/actions/actions'
@@ -14,59 +14,17 @@ import Programme_List from './components/programme/programme_list'
 import Gallary from './components/gallary/gallary'
 import ResetPassword from './components/password_reset/forgotpassword'
 import NotFound from './components/notfound/error'
-import Alert from '@material-ui/lab/Alert'
-import IconButton from '@material-ui/core/IconButton'
-import CloseIcon from '@material-ui/icons/Close'
 
 function App (props) {
-  const [open, setOpen] = useState(true)
-
+  // when components renders update redux store
   useEffect(() => {
     props.updateRedux()
   })
 
-  const closeAlert = () => {
-    setOpen(false)
-  }
-
   const history = createBrowserHistory()
-  const { message, error } = props
-
+  
   return (
     <div className='app row no-gutters'>
-      {open && (
-        <div className='col-12'>
-          {message !== '' && (
-            <Alert
-              severity='success'
-              variant='filled'
-              action={
-                <IconButton size='small' onClick={closeAlert} className='icon'>
-                  <CloseIcon fontSize='inherit' />
-                </IconButton>
-              }
-              className='alert success'
-            >
-              {message}
-            </Alert>
-          )}
-
-          {error !== '' && (
-            <Alert
-              severity='error'
-              variant='filled'
-              action={
-                <IconButton size='small' className='icon' onClick={closeAlert}>
-                  <CloseIcon fontSize='inherit' />
-                </IconButton>
-              }
-              className='alert error'
-            >
-              {error}
-            </Alert>
-          )}
-        </div>
-      )}
       <div className='col-12 nopadding'>
         <Router history={history}>
           <Header />
@@ -90,8 +48,6 @@ function App (props) {
   )
 }
 const mapStateToProps = state => ({
-  message: state.register.message,
-  error: state.register.error
 })
 
 export default connect(mapStateToProps, { updateRedux })(App)

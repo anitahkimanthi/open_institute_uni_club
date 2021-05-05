@@ -7,12 +7,14 @@ import IconButton from '@material-ui/core/IconButton'
 import CloseIcon from '@material-ui/icons/Close'
 import Slide from '@material-ui/core/Slide'
 
+// modal transition on click of view more button
 const Transition = React.forwardRef(function Transition (props, ref) {
   return <Slide direction='up' ref={ref} {...props} />
 })
 
 export default function FullScreenDialog (props) {
-  const { open, handleClose, data } = props
+
+  const { open, handleClose, data } = props // distructuring the props
 
   return (
     <div className='dialog'>

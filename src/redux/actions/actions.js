@@ -9,12 +9,17 @@ import {
   FAILED_LOGOUT,
   GOOGLEAUTH_LOGIN_SUCCESS,
   GOOGLEAUTH_REGISTER,
-  GOOGLEAUTH_LOGIN_FAILED
+  GOOGLEAUTH_LOGIN_FAILED,
+  REGISTRATION_FAIL
 } from './types'
+import store from "../store"
 
 // set redux store signup data with the one in the local storage if avalilable
 export const updateRedux = () => dispatch => {
+  // gettting the dat from local storage
   const data = JSON.parse(localStorage.getItem('registerInfo'))
+
+  // check if there is data in local storage if not return objects with empty values
   if (data) {
     dispatch({
       type: REGISTER,
@@ -27,6 +32,7 @@ export const updateRedux = () => dispatch => {
       age: '',
       loggedIn: null
     }
+
     dispatch({
       type: REGISTER,
       payload: userInputs
@@ -35,20 +41,43 @@ export const updateRedux = () => dispatch => {
 }
 
 // register user if they reguest  to register
-export const register = userInputs => dispatch => {
-  localStorage.setItem('registerInfo', JSON.stringify(userInputs))
+export const register = (userInputs) => dispatch => {
+  // set the user input values in local storage for later retrival to use in knowing if user is aready registered
 
+  // get the user data from the local storage and set the data in redux
   const data = JSON.parse(localStorage.getItem('registerInfo'))
 
-  dispatch({
-    type: REGISTER,
-    payload: data
-  })
+  if (
+    userInputs.email === data.email &&
+    userInputs.password === data.password &&
+    userInputs.age === data.age
+  ){
+    dispatch({
+      type: REGISTRATION_FAIL,
+      payload: "Account aready exist"
+    })
+  } else{
 
-  dispatch({
-    type: SUCCESS_REGISTER,
-    payload: 'You have successifully created an account!'
-  })
+   localStorage.setItem('registerInfo', JSON.stringify(userInputs))
+
+    dispatch({
+      type: REGISTER,
+      payload: data
+    })
+
+    dispatch({
+      type: SUCCESS_REGISTER,
+      payload: 'You have successifully created an account!'
+    })
+    const mess = store.getState().register.message
+
+      // setInterval(() => {
+      //   if(mess !== ""){
+      //   window.location.href ="/"
+      //   }
+      // }, 3000);
+  }
+    
 }
 
 // signin user if they already have an account
@@ -66,9 +95,6 @@ export const signin = userInputs => dispatch => {
       // set the update data to local storage
       localStorage.setItem('registerInfo', JSON.stringify(signupData))
 
-      // update redux store
-      updateRedux()
-
       dispatch({
         type: SUCCESS_LOGIN,
         payload: 'You have successifully logged in'
@@ -78,6 +104,15 @@ export const signin = userInputs => dispatch => {
         type: FAILED_LOGIN,
         payload: ''
       })
+
+      // const mess = store.getState().register.message
+
+      // setInterval(() => {
+      //   if(mess !== ""){
+      //   window.location.href ="/"
+      //   }
+      // }, 3000);
+    
     } else {
       // display error if the password and email dont match
       dispatch({

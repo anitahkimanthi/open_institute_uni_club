@@ -8,7 +8,7 @@ export default function partners_section () {
     <div className='row no-gutters justify-content-center partners'>
       <h3 className='col-12 text-center'>{partners.title}</h3>
       {partners.images.map((image, i) => (
-        <div className='col-12 col-md-2'>
+        <div className='col-12 col-md-2' key={i}>
           <img src={image} alt='title' className='img-fluid' />
         </div>
       ))}

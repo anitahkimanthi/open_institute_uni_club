@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
   AppBar,
@@ -21,7 +21,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 import { useState } from 'react'
 import { headerStyles } from '../styles/styles'
 import { data } from '../data/content'
-import { logoutUser } from '../../redux/actions/actions'
+import { logoutUser, updateRedux } from '../../redux/actions/actions'
 import { connect } from 'react-redux'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 import {
@@ -41,15 +41,17 @@ const Sidebar = props => {
     popupId: 'demoPopover'
   })
 
-  const { loggedIn, logoutUser, email } = props
+  const { loggedIn, logoutUser, email,updateRedux } = props
 
   // check if user is logged in
 
   const logout = () => {
     logoutUser()
+    updateRedux()
   }
 
   const username = email.substring(0, email.lastIndexOf('@'))
+  
   return (
     <div className='sidebar'>
       <List>
@@ -111,26 +113,31 @@ const Sidebar = props => {
 }
 
 const Nav = props => {
-  const theme = useTheme()
-  const classes = headerStyles()
+  const theme = useTheme() // allows user to use the word theme for direction setting
+  const classes = headerStyles() // styles
+
+  // setting state
   const [menu, setMenu] = useState(false)
 
+  // open the open up when user click on the profile
   const popupState = usePopupState({
     variant: 'popover',
     popupId: 'demoPopover'
   })
 
-  const { loggedIn, logoutUser, email } = props
+  // distructuring the props states and actions
+  const { loggedIn, logoutUser, email,updateRedux} = props
 
   // allow user to open sidemenu
   const handleOpenMenu = () => {
     setMenu(!menu)
   }
 
-  // check if user is logged in
-
+  // check if user is logged in if yes log them out
   const logout = () => {
     logoutUser()
+    updateRedux()
+    
   }
 
   return (
@@ -158,7 +165,7 @@ const Nav = props => {
             <div className={classes.headerLinks}>
               <List className={classes.links}>
                 {headerContent.map((item, i) => (
-                  <NavLink to={item.link} activeClassName='active'>
+                  <NavLink to={item.link} key={i} activeClassName='active'>
                     <ListItem key={i} className={classes.linkItem}>
                       <ListItemText primary={item.text} />
                       <Divider />
@@ -176,7 +183,7 @@ const Nav = props => {
                       <ListItem>
                         <Avatar src='/broken-image.jpg' className='avatar' />
                         <ListItemText>
-                          {email
+                          {email !== ""
                             ? email.substring(0, email.lastIndexOf('@'))
                             : ''}
                           <ExpandMoreIcon />
@@ -204,7 +211,7 @@ const Nav = props => {
                 <div className='auth_buttons'>
                   <List className={classes.buttonItem}>
                     {buttons.map((item, i) => (
-                      <Link to={item.link}>
+                      <Link to={item.link} key={i}>
                         <ListItem key={i}>
                           <Button variant='contained' key={i}>
                             {item.text}
@@ -244,15 +251,20 @@ const Nav = props => {
   )
 }
 
-function header (props) {
-  const { loggedIn, logoutUser, email } = props
+function Header (props) {
+  const { loggedIn, logoutUser, email,updateRedux } = props
 
-  return <Nav loggedIn={loggedIn} logoutUser={logoutUser} email={email} />
+  return <Nav 
+    loggedIn={loggedIn} 
+    updateRedux ={updateRedux}
+    logoutUser={logoutUser} 
+    email={email} 
+    />
 }
 
 const mapStateToProps = state => ({
   loggedIn: state.register.registerInfo.loggedIn,
-  email: state.register.registerInfo.email
+  email: state.register.registerInfo.email,
 })
 
-export default connect(mapStateToProps, { logoutUser })(header)
+export default connect(mapStateToProps, { logoutUser, updateRedux })(Header)
