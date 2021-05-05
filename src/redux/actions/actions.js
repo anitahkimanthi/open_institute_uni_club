@@ -12,7 +12,6 @@ import {
   GOOGLEAUTH_LOGIN_FAILED,
   REGISTRATION_FAIL
 } from './types'
-import store from "../store"
 
 // set redux store signup data with the one in the local storage if avalilable
 export const updateRedux = () => dispatch => {
@@ -41,7 +40,7 @@ export const updateRedux = () => dispatch => {
 }
 
 // register user if they reguest  to register
-export const register = (userInputs) => dispatch => {
+export const register = userInputs => dispatch => {
   // set the user input values in local storage for later retrival to use in knowing if user is aready registered
 
   // get the user data from the local storage and set the data in redux
@@ -51,14 +50,13 @@ export const register = (userInputs) => dispatch => {
     userInputs.email === data.email &&
     userInputs.password === data.password &&
     userInputs.age === data.age
-  ){
+  ) {
     dispatch({
       type: REGISTRATION_FAIL,
-      payload: "Account aready exist"
+      payload: 'Account aready exist'
     })
-  } else{
-
-   localStorage.setItem('registerInfo', JSON.stringify(userInputs))
+  } else {
+    localStorage.setItem('registerInfo', JSON.stringify(userInputs))
 
     dispatch({
       type: REGISTER,
@@ -69,15 +67,7 @@ export const register = (userInputs) => dispatch => {
       type: SUCCESS_REGISTER,
       payload: 'You have successifully created an account!'
     })
-    const mess = store.getState().register.message
-
-      // setInterval(() => {
-      //   if(mess !== ""){
-      //   window.location.href ="/"
-      //   }
-      // }, 3000);
   }
-    
 }
 
 // signin user if they already have an account
@@ -104,15 +94,6 @@ export const signin = userInputs => dispatch => {
         type: FAILED_LOGIN,
         payload: ''
       })
-
-      // const mess = store.getState().register.message
-
-      // setInterval(() => {
-      //   if(mess !== ""){
-      //   window.location.href ="/"
-      //   }
-      // }, 3000);
-    
     } else {
       // display error if the password and email dont match
       dispatch({

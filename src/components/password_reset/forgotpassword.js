@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { resetPassword } from '../../redux/actions/actions'
 import signupImage from '../../static/images/image6.jpeg'
 import AlertBar from '../alert/alert'
-import {withRouter} from "react-router"
+import { withRouter } from 'react-router'
 
 function ResetPassword (props) {
   const [state, setState] = useState({
@@ -13,8 +13,6 @@ function ResetPassword (props) {
     confirm_password: '',
     error: ''
   })
-
-
 
   const { message } = props
 
@@ -30,7 +28,7 @@ function ResetPassword (props) {
   const handleSubmit = e => {
     e.preventDefault()
 
-    const { password, confirm_password } = state 
+    const { password, confirm_password } = state
 
     // check if password match
     if (password !== confirm_password) {
@@ -54,18 +52,18 @@ function ResetPassword (props) {
       // do the password reset if the entered information is okay
       props.resetPassword(userInputs)
 
-      if(!props.error){
+      if (!props.error) {
         setInterval(() => {
-          props.history.push("/")
-          }, 3000);
+          props.history.push('/')
+        }, 3000)
       }
-      }
+    }
   }
 
   const { password, confirm_password, error } = state
   return (
     <div className='row no-gutters auth h-80 justify-content-center'>
-      <AlertBar message={message}/>
+      <AlertBar message={message} />
       <div className='col-12 col-lg-6 fields my-auto'>
         <form>
           <h3>Password Reset</h3>
@@ -122,8 +120,9 @@ function ResetPassword (props) {
 const mapStateToProps = state => ({
   registerInfo: state.register,
   error: state.register.error,
-  message: state.register.message,
-  error: state.register.error
+  message: state.register.message
 })
 
-export default withRouter(connect(mapStateToProps, { resetPassword })(ResetPassword))
+export default withRouter(
+  connect(mapStateToProps, { resetPassword })(ResetPassword)
+)

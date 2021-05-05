@@ -1,15 +1,14 @@
 import { Button, Divider } from '@material-ui/core'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { register, updateRedux } from '../../redux/actions/actions'
 import image from '../../static/images/image13.jpg'
 import AlertBar from '../alert/alert'
-import {withRouter} from "react-router"
+import { withRouter } from 'react-router'
 import store from '../../redux/store'
 
 function Signup (props) {
-
   // setting user input in state
   const [state, setState] = useState({
     email: '',
@@ -18,8 +17,7 @@ function Signup (props) {
     loggedIn: false
   })
 
-
-  const { message, error ,updateRedux} = props
+  const { message, error, updateRedux } = props
 
   // enable user to type and see what they are typing
   const handleChange = e => {
@@ -48,20 +46,17 @@ function Signup (props) {
     })
 
     props.register(userInputs)
-    updateRedux();
+    updateRedux()
 
     const mess = store.getState().register.message
     console.log(mess)
-    
   }
 
-const { password, email, age } = state /// distructuring of state
+  const { password, email, age } = state /// distructuring of state
   return (
-
     <div className='row no-gutters auth h-80 justify-content-center'>
+      <AlertBar message={message} error={error} />
 
-      <AlertBar message={message} error={error}/>
-      
       <div className='col-12 col-lg-6 fields my-auto'>
         <form>
           <h3>Register</h3>
@@ -127,4 +122,6 @@ const mapStateToProps = state => ({
   error: state.register.error
 })
 
-export default withRouter(connect(mapStateToProps, { register,updateRedux })(Signup))
+export default withRouter(
+  connect(mapStateToProps, { register, updateRedux })(Signup)
+)
